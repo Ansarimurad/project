@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login</title>
+   <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(wp5882269.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+color: #eae1e1;
+
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    text-decoration-color: #dfe5e9;
+    color: #fff;
+}
+.Logo{
+ font-size: 2em;
+color: #b0c4af;
+ user-select: none;
+ background-color: #fff;
+ height: 30px;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    color: rgb(202, 209, 203);
+}
+.navigation a::after{
+    content:'' ;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+
+
+    background: #c3b7b7;
+    border-radius: 5px;
+color: #fff;
+transform: scaleX(0-);
+transform-origin: right;
+
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+    color: #dfe5e9;
+}
+.navigation.btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+transition: 5s;
+
+
+}
+.navigation.btnLogin-popup:hover{
+    background: #fff;
+    color: #dfe5e9;
+    text-align: center;
+}
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(6, 5, 5, 0.5);
+    border-radius: 20px;
+backdrop-filter: blur(20px);
+box-shadow: 0 0 30px rgba(105, 104, 104, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+color: #dfe5e9;
+}
+.wrapper.form-box{
+    
+}
+
+</style>
+</head>
+<body>
+    <a href="Home.html"></a>
+    <header>
+        <h2 class="Login"> Logo</h2>
+        <nav class="navigatio a">
+<link rel="stylesheet" href="Home.html">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup"> Login</button> 
+        </nav>
+    </header>
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="email" required>
+                    <label >Email</label>
+                </div>
+            
+
+        
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label >password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label> <input type="checkbox">Remember me </label>
+                    <a href="#">Forgot password?</a>            
+                    </div>
+                    <button type="submit" class="btn">Login
+                    </button>
+                        <div class="login-register">
+                            <p>Dont have an account? <a href="#"
+                                 class="register-link">Register</a></p>
+                        </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
